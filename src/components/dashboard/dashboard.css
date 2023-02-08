@@ -1,0 +1,81 @@
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    background-color: #dbdcdd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.dashboardWrapper{
+    width: 50%;
+    height: 400px;
+    
+}
+.attendanceBox{
+    height: 180px;
+    padding: 20px;
+    background-color: #0d0c0ccd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.attendanceInput{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+   padding-left: 15px;
+   font-size: 16px;
+}
+.attendanceInput:focus{
+    outline: none;
+}
+.AttendanceButton{
+    height: 50px;
+    width: 50%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #1775ee;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.loginForgot{
+    text-align: center;
+    color: #1775ee;
+    cursor: pointer;
+}
+.loginRegisterButton{
+    height: 50px;
+    width: 60%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.attendanceCountBox{
+    height: 180px;
+    padding: 20px;
+    background-color: #0d0c0ccd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.countText{
+    color: aliceblue;
+    font-size: 17px;
+}
+.sidebarHr{
+    margin: 20px 0;
+    color: rgb(255, 255, 255);
+ }
