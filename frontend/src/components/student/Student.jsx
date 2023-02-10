@@ -46,10 +46,24 @@ export default function Student() {
         const item = student.find((i) => i.id === id);
         
         axios.get(`http://localhost:8070/student/get/${id}`).then((res) =>{
-            console.log(res);
+            console.log(res.data.student);
+            setId(res.data.student.stdid);
+            setName(res.data.student.fullname);
+            setAddress(res.data.student.address);
+            setGender(res.data.student.gender);
+            setDob(res.data.student.dob);
+            setParentName(res.data.student.parentname);
+            setContactNumber(res.data.student.contactnumber);
+            setNotes(res.data.student.notes);
+            
         })
         
     }
+    // const clickUpdate = (id) =>{
+    //     axios.get(`http://localhost:8070/student/update/${id}`).then((res) =>{
+            
+    // })
+    // }
 
 
 
@@ -95,27 +109,27 @@ export default function Student() {
 
                 <div className="addStudentForm">
                     <div className="addStudentFormLeft">
-                        <input placeholder='Student ID' className="stdInput" 
+                        <input placeholder='Student ID' className="stdInput" value={stdid}
                             onChange={(e)=>{
                                 setId(e.target.value);
                             }}
                         />
-                        <input placeholder='Student Name' className="stdInput" 
+                        <input placeholder='Student Name' className="stdInput"  value={fullname}
                             onChange={(e)=>{
                                 setName(e.target.value);
                             }}
                         />
-                        <input placeholder='Student Address' className="stdInput" 
+                        <input placeholder='Student Address' className="stdInput"  value={address}
                             onChange={(e)=>{
                                 setAddress(e.target.value);
                             }}
                         />
-                        <input placeholder='Gender' className="stdInput" 
+                        <input placeholder='Gender' className="stdInput"  value={gender}
                             onChange={(e)=>{
                                 setGender(e.target.value);
                             }}
                         />
-                        <input placeholder='Date of Birth' className="stdInput" 
+                        <input placeholder='Date of Birth' className="stdInput"  value={dob}
                             onChange={(e)=>{
                                 setDob(e.target.value);
                             }}
@@ -124,22 +138,23 @@ export default function Student() {
                     </div>
 
                     <div className="addStudentFormRight">
-                        <input placeholder='Parent Name' className="stdInput" 
+                        <input placeholder='Parent Name' className="stdInput"  value={parentname}
                             onChange={(e)=>{
                                 setParentName(e.target.value);
                             }}
                         />
-                        <input placeholder='Contact Number' className="stdInput" 
+                        <input placeholder='Contact Number' className="stdInput"  value={contactnumber}
                             onChange={(e)=>{
                                 setContactNumber(e.target.value);
                             }}
                         />
-                        <input placeholder='Remarks' className="stdInput" 
+                        <input placeholder='Remarks' className="stdInput"  value={notes}
                             onChange={(e)=>{
                                 setNotes(e.target.value);
                             }}
                         />
                         <button type='submit' className="saveButton">Save</button>
+                        <button type='submit' className="updateButton" onClick="" >Update</button>
 
                     </div>
                     
