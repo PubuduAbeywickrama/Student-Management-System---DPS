@@ -15,7 +15,7 @@ export default function Sidebar() {
           <hr className='sidebarHr'/>
               <li className="sidebarListItem" >
                   <HomeIcon className='sidebarIcon'/>
-                  <a href="/"><span  className="sidebarListItemText" >
+                  <a href="/atd"><span  className="sidebarListItemText" >
                     Home
                   </span></a>
               </li>
@@ -27,7 +27,7 @@ export default function Sidebar() {
               </li>
               <li className="sidebarListItem" onClick={"/student"}>
                   <a><NoteAltIcon className='sidebarIcon'/></a>
-                  <a className="sidebarListItemText" href='/attendance'>
+                  <a className="sidebarListItemText" href='/atd/attendance'>
                     Attendence
                   </a>
               </li>

@@ -33,6 +33,14 @@ export default function Student() {
         axios.post("http://localhost:8070/student/add",newStudent)
         .then(()=>{
             getStudents()
+            setId("");
+            setName("");
+            setAddress("");
+            setGender("");
+            setDob("");
+            setParentName("");
+            setContactNumber("");
+            setNotes("");
         }).catch((err)=>{
             alert(err)
         })

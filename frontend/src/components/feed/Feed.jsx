@@ -12,9 +12,9 @@ export default function Feed() {
     <div className='feed'>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Dashboard/>}/>
+                <Route path="/atd" element={<Dashboard/>}/>
                 <Route path="/student" element={<Student/>}></Route>
-                <Route path="/attendance" element={<Attendance/>}></Route>
+                <Route path="/atd/attendance" element={<Attendance/>}></Route>
                 <Route path="/payment" element={<Payment/>}></Route>
 
             </Routes>

@@ -17,6 +17,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.loginRight{
+    
+}
 .loginLogo{
     font-size: 50px;
     font-weight: 800;
@@ -29,7 +32,7 @@
 .loginBox{
     height: 300px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #0d0c0ccd;
     border-radius: 10px;
     display: flex;
     flex-direction: column;

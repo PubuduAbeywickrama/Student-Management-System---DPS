@@ -22,7 +22,10 @@ mongoose.connect("mongodb+srv://admin:admin123@cluster0.2drfzpu.mongodb.net/?ret
 const studentRouter = require("./routes/students.js");
 
 app.use("/student", studentRouter);
-  
+
+const attendanceRouter = require("./routes/attendances.js");
+app.use("/atd", attendanceRouter);
+
   app.listen(PORT, () => {
     console.log(`Server is up and running on port number: ${PORT}`)
   })
