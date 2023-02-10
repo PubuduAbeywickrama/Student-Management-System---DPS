@@ -7,6 +7,34 @@ import { useNavigate } from "react-router-dom";
 
 
 export default function Attendance() {
+
+    
+
+
+
+    const [student, setStudents] = useState([]);
+
+    useEffect(()=> {
+        
+        getStudents();
+
+        
+    }, [])
+    function getStudents(){
+        axios.get("http://localhost:8070/student/")
+            .then((res)=>{
+                setStudents(res.data);
+            }).catch((err)=>{alert(err)})
+    }
+
+
+
+
+
+
+
+
+
   return (
     <div className="attendance">
 
