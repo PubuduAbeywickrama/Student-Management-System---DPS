@@ -16,7 +16,7 @@ export default function Student() {
     const [notes, setNotes] = useState("");
     const navigate = useNavigate();
    // const [itemlist, setItemList] = useState([]);
-   
+
     function sendData(e){
         e.preventDefault();
         
@@ -163,7 +163,7 @@ export default function Student() {
                             }}
                         />
                         <button type='submit' className="saveButton">Save</button>
-                        <button type='submit' className="updateButton" onClick="" >Update</button>
+                        
 
                     </div>
                     

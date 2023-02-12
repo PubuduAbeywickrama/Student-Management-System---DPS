@@ -26,6 +26,11 @@ app.use("/student", studentRouter);
 const attendanceRouter = require("./routes/attendances.js");
 app.use("/atd", attendanceRouter);
 
+const paymentRouter = require("./routes/payments.js");
+app.use("/payment", paymentRouter);
+
+
+
   app.listen(PORT, () => {
     console.log(`Server is up and running on port number: ${PORT}`)
   })

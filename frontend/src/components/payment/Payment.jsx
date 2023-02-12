@@ -10,26 +10,89 @@ export default function Payment() {
   return (
     <div className="attendance">
 
-        <div className="atdBox">
-            <div className="atdForm">
-                <h4>Search here</h4>
-                <input placeholder='Student Id' className="atdInput" 
-                            // onChange={(e)=>{
-                            //     setNotes(e.target.value);
-                            // }}
-                        />
-                <button type='submit' className="atdButton">Search by ID</button>
-                <br></br>
+        <form className = "formcontainer">
 
-                <input placeholder='Month' className="atdInput" 
-                            // onChange={(e)=>{
-                            //     setNotes(e.target.value);
-                            // }}
-                        />
-                <button type='submit' className="atdButton">Search by Month</button>
+        <div className="addStudentBox">
 
+            <div className="addStudentForm">
+                <div className="addStudentFormLeft">
+                    <h4>Add Payment</h4>
+                    <input placeholder='Student ID' className="stdInput" value=""
+                        // onChange={(e)=>{
+                        //     setId(e.target.value);
+                        // }}
+                    />
+                     <select placeholder='Month' className="stdInput"  value=""
+                        // onChange={(e)=>{
+                        //     setContactNumber(e.target.value);
+                        // }}
+                    >
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <input placeholder='Payment' className="stdInput"  
+                        // onChange={(e)=>{
+                        //     setAddress(e.target.value);
+                        // }}
+                    />
+                    <input placeholder='Balance' className="stdInput"  value=""
+                        // onChange={(e)=>{
+                        //     setGender(e.target.value);
+                        // }}
+                    />
+                    <button type='submit' className="saveButton">Add Payment</button>
+                
+                </div>
+
+                <div className="addStudentFormRight">
+                    <h4>Search Here</h4>
+                    <input placeholder='Student Id' className="stdInput"  value=""
+                        // onChange={(e)=>{
+                        //     setParentName(e.target.value);
+                        // }}
+                    />
+                    <button type='submit' className="searchButton">Search by ID</button>
+
+
+                    <select placeholder='Month' className="stdInput"  value=""
+                        // onChange={(e)=>{
+                        //     setContactNumber(e.target.value);
+                        // }}
+                    >
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    
+                    <button type='submit' className="searchButton">Search By Month</button>
+                    
+
+                </div>
+                
+            
             </div>
+            
         </div>
+        </form>
 
 
 
