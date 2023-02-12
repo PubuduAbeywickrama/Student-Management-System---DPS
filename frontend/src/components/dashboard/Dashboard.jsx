@@ -1,9 +1,6 @@
-
 import './dashboard.css'
-import React , { useState, useEffect} from 'react'
-
+import React , { useState} from 'react'
 import axios from 'axios'
-import { useNavigate } from "react-router-dom";
 export default function Dashboard() {
 
     const [stdid, setId] = useState("");
@@ -29,17 +26,13 @@ export default function Dashboard() {
 
     }
 
-
-
-
-
-
-
   return (
     <div className="dashboard">
         <div className="dashboardWrapper">
+        <h4>Submit Attendance</h4>
             <form onSubmit={sendData}>
             <div className="attendanceBox">
+                    
                     <input placeholder='Student Id' className="attendanceInput" value={stdid}
                         onChange={(e)=>{
                           setId(e.target.value);
@@ -49,14 +42,7 @@ export default function Dashboard() {
                     <button type="submit" className="AttendanceButton">Submit</button>
             </div>
             </form >
-            <div className="attendanceCountBox">
-                <span className="countText">Today Count : 25</span>
-                <hr className='sidebarHr'/>
-                <span className="countText">Total Students : 55</span>
-                <span className="countText">Boys  : 30</span>
-                <span className="countText">Girls  : 25</span>
-
-            </div>
+            
         </div>
     </div>
   )

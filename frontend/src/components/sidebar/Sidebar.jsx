@@ -4,7 +4,6 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import NoteAltIcon from '@mui/icons-material/NoteAlt';
 import PaymentIcon from '@mui/icons-material/Payment';
 import HomeIcon from '@mui/icons-material/Home';
-import {Link} from 'react-router-dom';
 
 
 export default function Sidebar() {

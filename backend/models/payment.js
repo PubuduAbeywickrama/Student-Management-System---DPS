@@ -20,7 +20,7 @@ const paymentSchema = new Schema({
         required : true
     },
     bal : {
-        type : Number,
+        type : String,
         required : true
     }
 })

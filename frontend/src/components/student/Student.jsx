@@ -68,15 +68,6 @@ export default function Student() {
         })
         
     }
-    // const clickUpdate = (id) =>{
-    //     axios.get(`http://localhost:8070/student/update/${id}`).then((res) =>{
-            
-    // })
-    // }
-
-
-
-
 
 
     const [student, setStudents] = useState([]);
@@ -103,11 +94,6 @@ export default function Student() {
         
     }
     
-
-
-
-
-
   return (
     <div className="student">
             <h4 className="addstudent">Add Student</h4>
@@ -133,11 +119,15 @@ export default function Student() {
                                 setAddress(e.target.value);
                             }}
                         />
-                        <input placeholder='Gender' className="stdInput"  value={gender}
+                        <select placeholder='Gender' className="stdInput"  value={gender}
                             onChange={(e)=>{
                                 setGender(e.target.value);
                             }}
-                        />
+                        >
+                            <option>Gender</option>
+                            <option value={"Male"}>Male</option>
+                            <option value={"Female"}>Female</option>
+                        </select>
                         <input placeholder='Date of Birth' className="stdInput"  value={dob}
                             onChange={(e)=>{
                                 setDob(e.target.value);

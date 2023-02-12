@@ -7,11 +7,6 @@ import axios from 'axios'
 
 
 export default function Attendance() {
-
-    
-
-
-
     const [atd, setAtd] = useState([]);
 
     useEffect(()=> {
@@ -35,12 +30,6 @@ export default function Attendance() {
         })
         
     }
-
-
-
-
-
-
 
   return (
     <div className="attendance">
