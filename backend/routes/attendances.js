@@ -26,7 +26,7 @@ router.route("/atdAdd").post((req,res) => {
 
 
 //get data or display data from database
-router.route("/atd").get((req,res)=>{
+router.route("/attendance").get((req,res)=>{
     Attendance.find()
         .then((attendances)=>{
             res.json(attendances);
@@ -38,7 +38,7 @@ router.route("/atd").get((req,res)=>{
 
 
 //delete data
-router.route("/atd/delete/:id").delete(async (req,res) => {
+router.route("/attendance/delete/:id").delete(async (req,res) => {
     let userId = req.params.id;
 
     await Attendance.findByIdAndDelete(userId)
